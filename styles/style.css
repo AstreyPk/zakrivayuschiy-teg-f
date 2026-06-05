@@ -91,7 +91,6 @@
   padding: 25px;
   line-height: 21px;
   letter-spacing: 0.5px;
-  line-height: 21px;
 }
 
 .text_main {
@@ -255,7 +254,6 @@
   outline: 2px solid var(--outline);
   z-index: 1;
   outline: none;
-  display: flex;
   align-items: center;
   justify-content: center;
   gap: 8px;
@@ -366,6 +364,7 @@
   }
 
   .save-button {
+    display: flex;
     flex-direction: column;
     width: 306px;
     height: 84px;

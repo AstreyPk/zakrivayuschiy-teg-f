@@ -273,8 +273,8 @@
   transition: box-shadow 0.3s ease;
 }
 
-.button::before{
-  content: '';
+.button::before {
+  content: "";
   position: absolute;
   inset: 0;
   background-color: var(--button-bg-color);
@@ -283,7 +283,7 @@
   transform-origin: left;
 }
 
-.button:hover::before{
+.button:hover::before {
   transform: scaleX(1);
 }
 
@@ -361,17 +361,17 @@
 
 @media (width <= 375px) {
   .floppy {
-  max-width: 28px;
-  height: 28px;
-}
-  
+    max-width: 28px;
+    height: 28px;
+  }
+
   .save-button {
     flex-direction: column;
     width: 306px;
     height: 84px;
   }
 
-  .footer{
+  .footer {
     padding-bottom: 0;
   }
 }

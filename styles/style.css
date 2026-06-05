@@ -253,7 +253,6 @@
   background: var(--background-color);
   outline: 2px solid var(--outline);
   z-index: 1;
-  outline: none;
   align-items: center;
   justify-content: center;
   gap: 8px;

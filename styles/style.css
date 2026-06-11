@@ -26,6 +26,7 @@
   display: grid;
   grid-template-columns: 1fr;
   justify-content: center;
+  align-items: center;
   min-inline-size: 320px;
   min-block-size: 100dvb;
   font-family: var(--font-main), sans-serif;
@@ -34,7 +35,8 @@
   background-size: cover;
   background-attachment: fixed;
   background-image: var(--background-image);
-  padding: 100px 370px 100px 370px;
+  padding-block-start: 100px;
+  padding-block-end: 100px;
 }
 
 .header {
@@ -181,7 +183,7 @@
 .card__icon-button {
   display: flex;
   padding: 0;
-  width: 39px;
+  width: 38px;
   height: 38px;
   align-items: center;
   justify-content: center;
@@ -236,6 +238,8 @@
 .container_for_dialog-text {
   display: flex;
   gap: 20px;
+  max-inline-size: 293px;
+  max-block-size: 63px;
 }
 
 .container_for_dialog-text .floppy {
@@ -293,6 +297,8 @@
 .button__text {
   color: var(--background-color);
   mix-blend-mode: difference;
+  max-inline-size: 234px;
+  max-block-size: 63px;
 }
 
 .dialog-form .button__text {
@@ -321,7 +327,7 @@
 
 .like-icon:active .main-body {
   fill: var(--heart-body-color);
-  transition: fill 0.3s 0s linear;
+  transition: fill 0.3s 0.05s linear;
 }
 
 .like-icon:active .core {
@@ -372,6 +378,7 @@
 
 .card__icon-button:focus-visible {
   outline: var(--outline);
+  outline-offset: -2px;
 }
 
 .like-icon.is-liked .sparks {
@@ -381,10 +388,6 @@
 }
 
 @media (width <= 375px) {
-  .page {
-    padding: 100px 0px 100px 0px;
-  }
-
   .header {
     min-inline-size: 375px;
   }

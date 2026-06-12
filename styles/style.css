@@ -73,9 +73,10 @@
 }
 
 .card_list {
-  display: grid;
-  grid-template-columns: 1fr;
-  justify-self: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   gap: 50px;
   padding-bottom: 50px;
 }
